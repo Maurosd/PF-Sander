@@ -17,7 +17,7 @@ a {
 /* --- Header --- */
 
 .header {
-  background-color: #922a2a;
+  background-color: black ;  
   color: white;
   padding: 15px;
   width: 100%;
@@ -72,7 +72,7 @@ a {
 
 
 .ediciones__titulo {
-  background-color: #922a2a;
+  background-color: black;
   color: white;
   padding: 15px;
   font-size: 2rem;
@@ -80,8 +80,8 @@ a {
 }
 
 .tarjeta {
-  border: 2px solid #922a2a;
-  background-image: url(../img/tarjeta.jpg);
+  border: 2px solid white;
+  color: white;
   width: 300px;
   height: 320px;
   border-radius: 20px;
@@ -115,7 +115,7 @@ a {
   flex-direction: row;
   gap: 1rem;
   overflow: auto;
- background-color: white;
+ background-color: black;
 }
 
 
