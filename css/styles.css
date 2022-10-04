@@ -1,0 +1,357 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* --- Header --- */
+
+.header {
+  background-color: #922a2a;
+  color: white;
+  padding: 15px;
+  width: 100%;
+
+}
+
+.header__logo {
+  display: flex;
+  justify-content: center;
+
+}
+
+.header__nav ul {
+  padding: 5px;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+@media (min-width: 768px) {
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__nav{
+      width: 60%;
+      text-align: right;
+  }
+
+    header ul {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+/* --- Portada --- */
+
+.portada {
+  background-image: url(../img/portadareju.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Ediciones ---- */
+
+
+.ediciones__titulo {
+  background-color: #922a2a;
+  color: white;
+  padding: 15px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.tarjeta {
+  border: 2px solid #922a2a;
+  background-image: url(../img/tarjeta.jpg);
+  width: 300px;
+  height: 320px;
+  border-radius: 20px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+
+}
+
+.btn {
+  border: 2px solid #922a2a;
+  background-color: #922a2a;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 15px;
+}
+
+.btn:hover {
+  border: 2px solid #922a2a;
+  background-color: white;
+  color: #922a2a;
+}
+
+.slider {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: auto;
+ background-color: white;
+}
+
+
+.playlist {
+  background-image: url(../img/spotyt.jpeg);
+  background-position: center;
+  background-size: cover;
+  height: 200px;
+  padding: 20px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.playlist__titulo {
+  font-size: 2rem;
+  background-color: #922a2a54;
+  color: white;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.playlist__logo {
+  font-size: 3rem;
+  color: white;
+  border-radius: 10px;
+}
+
+/*---footer----*/
+footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  position:sticky;
+  bottom: 0;
+}
+
+
+.social {
+  text-align: center;
+  justify-content: space-between;
+}
+
+.social__contenedor{
+display: flex;
+font-size: 1.5rem;
+gap: 6px;
+}
+
+
+
+footer a {
+  color: white;
+}
+
+/*---informacion---*/
+
+.info {
+  background-image: url(../img/degradadi.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.main_info {
+  height: 76.6vh;
+}
+
+.info {
+  align-items: center;
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 3rem;
+  padding-bottom: 20px;
+}
+
+.info h3 {
+  font-size: 1.5rem;
+  padding: 15px;
+}
+
+.info p {
+  padding-bottom: 15px;
+  font-size: 1rem;
+}
+
+/*----Tickets---*/
+
+.tickets {
+  background-image: url(../img/degradadi.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.tickets__titulo {
+  text-align: center;
+  padding: 15px;
+  font-size: 3rem;
+  color: white;
+}
+
+.tickets__tipos {
+  align-items: center;
+  display: flex;
+  border: 5px solid #922a2a;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 3px;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.842);
+  color: white;
+}
+
+.tickets__tipos p {
+  width: 50vw;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+
+.tickets__tipos--img {
+  position: left;
+  width: 20vw;
+
+}
+
+.btn__comprar {
+  border: 2px solid #922a2a;
+  background-color: #922a2a;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-left: 3px;
+  font-size: 1rem;
+}
+
+.btn__comprar:hover {
+  border: 2px solid #922a2a;
+  background-color: white;
+  color: #922a2a;
+}
+
+
+/*---lineup---*/
+
+.lineup {
+  background-image: url(../img/degradadi.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.lineup h2 {
+  text-align: center;
+  font-size: 3rem;
+  color:#922a2a;
+}
+
+.lineup__dj {
+  border: 5px solid #922a2a;
+  background-color: rgb(255, 255, 255);
+  width: 300px;
+  height: 700px;
+  border-radius: 20px;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.lineup__descripcion {
+  font-size: 1rem;
+  width: 200px;
+  height: 200px;
+  text-align: justify;
+  padding-top: 5px;
+}
+
+.social-lineup {
+  text-align: center;
+  justify-content: space-between;
+}
+
+.social__contenedor-lineup{
+  display: flex;
+font-size: 1rem;
+gap: 6px;
+justify-content: space-around;
+}
+
+.social__contenedor-lineup i{
+  color: #922a2a;
+}
+
+/*----sponsors---*/
+
+.sponsors {
+  background-image: url(../img/degradadi.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.auspicia__titulo {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 15px;
+  
+  transition: 1s all ease-in;
+}
+
+.auspicia {
+  align-items: center;
+  text-align: center;
+}
+
+.auspicia__imagenes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 15px;
+
+}
+
+.auspicia__imagenes li{
+transition-duration: 1s;}
+
+.auspicia__imagenes li:hover{
+  transform: rotate(360deg);
+}
