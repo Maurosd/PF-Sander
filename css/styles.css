@@ -20,8 +20,11 @@ a {
   background-color: black ;  
   color: white;
   padding: 15px;
-  width: 100%;
-
+  width: 90%;
+  margin-top: 10px;
+  border-radius: 25px;
+  position: fixed;
+  margin-left: 5%;
 }
 
 .header__logo {
@@ -42,6 +45,12 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
+    margin-top: 10px;
+    border-radius: 25px;
+    position: fixed;
+    height: 90px;
+    margin-left: 5%;
   }
 
   .header__nav{
@@ -82,8 +91,8 @@ a {
 .tarjeta {
   border: 2px solid white;
   color: white;
-  width: 300px;
-  height: 320px;
+  width: 270px;
+  height: 256px;
   border-radius: 20px;
   padding: 15px;
 
@@ -91,7 +100,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.5rem;
+  font-size: 1rem;
 
 }
 
@@ -100,7 +109,7 @@ a {
   background-color: #922a2a;
   color: white;
   border-radius: 10px;
-  padding: 10px 15px;
+  padding: 3px 12px;
 }
 
 .btn:hover {
@@ -108,6 +117,53 @@ a {
   background-color: white;
   color: #922a2a;
 }
+
+.tarjeta__img {
+  width: 30vw;
+  height: 14vh;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px){
+  .ediciones__titulo {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .tarjeta {
+    border: 2px solid white;
+    color: white;
+    width: 300px;
+    height: 320px;
+    border-radius: 20px;
+    padding: 15px;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+  
+  }
+
+  .tarjeta__img {
+    width:20vw;
+    border-radius: 10px;
+    height: 25vh;
+
+  }
+  
+  .btn {
+    border: 2px solid #922a2a;
+    background-color: #922a2a;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 15px;
+  }
+  }
 
 .slider {
   padding: 15px;
@@ -184,6 +240,7 @@ footer a {
   background-image: url(../img/degradadi.jpg);
   background-position: center;
   background-size: cover;
+  padding-top: 150px;
 }
 
 .main_info {
@@ -216,6 +273,25 @@ footer a {
   background-image: url(../img/degradadi.jpg);
   background-position: center;
   background-size: cover;
+  padding-top: 150px;
+}
+
+.tickets__tipos {
+  align-items: center;
+  display: grid;
+  border: 5px solid #922a2a;
+  border-radius: 15px;
+  justify-content: space-around;
+  padding: 10px;
+  font-size: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.562);
+  color: white;
+  margin-bottom: 10px;
+
+  grid-template-areas: 
+  "img titulo"
+  "img texto "
+  "boton boton ";
 }
 
 .tickets__titulo {
@@ -223,41 +299,34 @@ footer a {
   padding: 15px;
   font-size: 3rem;
   color: white;
+  grid-area: titulo;
 }
 
-.tickets__tipos {
-  align-items: center;
-  display: flex;
-  border: 5px solid #922a2a;
-  justify-content: space-between;
-  padding: 10px;
-  margin: 3px;
-  font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.842);
-  color: white;
-}
 
 .tickets__tipos p {
   width: 50vw;
   text-align: justify;
   font-size: 1rem;
+  grid-area: texto;
+  padding-bottom: 10px;
 }
 
 
 .tickets__tipos--img {
-  position: left;
-  width: 20vw;
-
+  width: 90%;
+  height: 30vh;
+  grid-area: img;
 }
 
 .btn__comprar {
   border: 2px solid #922a2a;
   background-color: #922a2a;
   color: white;
+  text-align: center;
   border-radius: 10px;
   padding: 10px 10px;
-  margin-left: 3px;
   font-size: 1rem;
+  grid-area: boton;
 }
 
 .btn__comprar:hover {
@@ -270,15 +339,33 @@ footer a {
 /*---lineup---*/
 
 .lineup {
-  background-image: url(../img/degradadi.jpg);
+  background-image: url(../img/spotyt.jpeg);
   background-position: center;
   background-size: cover;
+  padding-top: 150px;
 }
 
 .lineup h2 {
   text-align: center;
   font-size: 3rem;
+  color:black;
+}
+
+.lineup h3 {
+  text-align: center;
+  font-size: 2rem;
   color:#922a2a;
+  padding-bottom: 5px; 
+}
+
+.slider-lineup {
+  text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  overflow: auto;
+ background-color: black;
 }
 
 .lineup__dj {
@@ -304,6 +391,10 @@ footer a {
   padding-top: 5px;
 }
 
+.lineup__img{
+  border-radius: 15px;
+}
+
 .social-lineup {
   text-align: center;
   justify-content: space-between;
@@ -326,6 +417,9 @@ justify-content: space-around;
   background-image: url(../img/degradadi.jpg);
   background-position: center;
   background-size: cover;
+  padding-top: 150px;
+  padding-bottom: 150px;
+
 }
 
 .auspicia__titulo {
@@ -339,6 +433,7 @@ justify-content: space-around;
 .auspicia {
   align-items: center;
   text-align: center;
+  
 }
 
 .auspicia__imagenes {
@@ -349,9 +444,12 @@ justify-content: space-around;
 
 }
 
-.auspicia__imagenes li{
-transition-duration: 1s;}
+.sponsor__img{
+transition-duration: 1s;
+padding: 5px;
+}
 
-.auspicia__imagenes li:hover{
+.sponsor__img:hover{
   transform: rotate(360deg);
 }
+
