@@ -165,7 +165,6 @@ main{
 
 /*---footer----*/
 footer {
-  position:sticky;
   bottom: 0;
 }
 
@@ -198,7 +197,7 @@ footer {
 /*----Tickets---*/
 
 .tickets {
-  background-image: url(../img/degradadi.jpg);
+  background-image: url(../img/general.jpg);
   background-position: center;
   background-size: cover;
   padding-top: 20px;
@@ -244,6 +243,7 @@ footer {
   width: 90%;
   height: 30vh;
   grid-area: img;
+  object-fit:cover;
 }
 
 .btn__comprar {
