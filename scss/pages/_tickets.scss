@@ -1,0 +1,51 @@
+.tickets {
+    background-color: black;
+    padding-top: 20px;
+    padding: 0%;
+
+    &__titulo {
+        text-align: center;
+        padding: 15px;
+        font-size: 3rem;
+        color: $color-secundario;
+    }
+
+    &__tipos {
+        background-color: $color-secundario;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        font-size: 1.5rem;
+        color: $color-primario;
+        margin: 10px;
+
+        p {
+            text-align: justify;
+            font-size: 1rem;
+            padding-bottom: 10px;
+        }
+
+        &--img {
+            padding: 15px;
+            width: 85vw;
+            height: 30vh;
+            object-fit: contain;
+        }
+    }
+
+    @media (min-width: 768px) {
+        &___tipos--img {
+            padding: 15px;
+            width: 90vw;
+            height: 60vh;
+        }
+        &__tipos p {
+            text-align: center;
+            font-size: 1rem;
+            padding-bottom: 10px;
+        }
+
+    }
+
+}

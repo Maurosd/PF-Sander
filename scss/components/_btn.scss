@@ -1,0 +1,33 @@
+.btn{
+  border: 2px solid $color-terciario;
+  background-color: $color-terciario;
+  color: $color-secundario;
+  border-radius: 50px; 
+
+  &:hover{
+    border: 2px solid $color-terciario;
+    background-color: $color-secundario;
+    color: $color-primario;
+  }
+}
+
+.btn__comprar {
+    border: 2px solid $color-terciario;
+    background-color: $color-terciario;
+    color: $color-secundario;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    grid-area: boton;
+
+    &:hover {
+        border: 2px solid $color-terciario;
+        background-color: $color-secundario;
+        color: $color-terciario;
+      }
+
+  }
+  
+  
+

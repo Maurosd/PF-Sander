@@ -1,0 +1,27 @@
+.lineup{
+    background-color: $color-primario;
+    padding-top: 15px; 
+    
+    h2{
+        text-align: center;
+        font-size: 3rem;
+        color:$color-secundario;  
+    }
+
+    h3{
+        text-align: center;
+        font-size: 2rem;
+        color:#922a2a;
+        padding-bottom: 5px;  
+    }
+
+    &__slider{
+        text-align: center;
+        padding: 15px;
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        overflow: auto;
+        background-color: $color-primario;  
+    }
+}

@@ -1,0 +1,40 @@
+main {
+    background-color: $color-primario;
+}
+
+.ediciones {
+    &__titulo {
+        background-color: $color-primario;
+        color: $color-secundario;
+        padding: 15px;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+.playlist {
+    background-image: url(../img/spotyt.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__titulo {
+        font-size: 2rem;
+        background-color: #922a2a54;
+        color: white;
+        border-radius: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    &__logo {
+        font-size: 3rem;
+        color: white;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,35 @@
+.sponsors {
+    background-image: url(../img/degradadi.jpg);
+    background-position: center;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 150px;
+
+    &__auspicia {
+        align-items: center;
+        text-align: center;
+        
+        &--titulo {
+            text-align: center;
+            font-size: 3rem;
+            padding-top: 15px;
+
+            transition: 1s all ease-in;
+        }
+
+        &--img{
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding: 15px;
+            
+            transition-duration: 1s;
+            padding: 5px;
+
+            &:hover{
+            transform: rotate(360deg);
+            }
+        }
+
+    }
+}
