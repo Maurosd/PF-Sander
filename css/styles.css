@@ -171,17 +171,15 @@ footer {
 /*---informacion---*/
 
 .info {
-  background-image: url(../img/degradadi.jpg);
-  background-position: center;
-  background-size: cover;
-  padding-top: 20px;
+  background-color: white;
   align-items: center;
   text-align: center;
 }
 
 .info h2 {
   font-size: 3rem;
-  padding-bottom: 20px;
+  padding: 15px;  background-color: black;
+  color: white;
 }
 
 .info h3 {
@@ -197,28 +195,9 @@ footer {
 /*----Tickets---*/
 
 .tickets {
-  background-image: url(../img/general.jpg);
-  background-position: center;
-  background-size: cover;
+  background-color: black;
   padding-top: 20px;
-}
-
-.tickets__tipos {
-  align-items: center;
-  display: grid;
-  border: 5px solid #922a2a;
-  border-radius: 15px;
-  justify-content: space-around;
-  padding: 10px;
-  font-size: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.562);
-  color: white;
-  margin-bottom: 10px;
-
-  grid-template-areas: 
-  "img titulo"
-  "img texto "
-  "boton boton ";
+  padding: 0%;
 }
 
 .tickets__titulo {
@@ -226,24 +205,46 @@ footer {
   padding: 15px;
   font-size: 3rem;
   color: white;
-  grid-area: titulo;
 }
 
+.tickets__tipos {
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  color: black;
+  margin: 10px;
+
+}
 
 .tickets__tipos p {
-  width: 50vw;
   text-align: justify;
   font-size: 1rem;
-  grid-area: texto;
   padding-bottom: 10px;
 }
 
-
-.tickets__tipos--img {
-  width: 90%;
+.tickets___tipos--img{
+  padding: 15px ;
+  width: 85vw;
   height: 30vh;
-  grid-area: img;
-  object-fit:cover;
+  object-fit: contain;
+}
+
+@media (min-width: 768px){
+  .tickets___tipos--img{
+    padding: 15px;
+    width: 90vw;
+    height: 60vh;
+  } 
+
+  .tickets__tipos p {
+    text-align: center;
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+  
 }
 
 .btn__comprar {
@@ -267,16 +268,14 @@ footer {
 /*---lineup---*/
 
 .lineup {
-  background-image: url(../img/spotyt.jpeg);
-  background-position: center;
-  background-size: cover;
-  padding-top: 20px;
+  background-color: black;
+  padding-top: 15px;
 }
 
 .lineup h2 {
   text-align: center;
   font-size: 3rem;
-  color:black;
+  color:white;
 }
 
 .lineup h3 {
