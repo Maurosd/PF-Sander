@@ -94,7 +94,11 @@ main {
   gap: 1rem;
   overflow: auto;
   background-color: black;
-  justify-content: center;
+}
+@media (min-width: 768px) {
+  .lineup__slider {
+    justify-content: center;
+  }
 }
 
 .sponsors {
