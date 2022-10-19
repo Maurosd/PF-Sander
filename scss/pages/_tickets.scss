@@ -18,7 +18,7 @@
         padding: 10px;
         font-size: 1.5rem;
         color: $color-primario;
-        margin: 10px;
+        margin-top: 20px;
 
         p {
             text-align: justify;
@@ -27,7 +27,6 @@
         }
 
         &--img {
-            padding: 15px;
             width: 85vw;
             height: 30vh;
             object-fit: contain;
@@ -35,10 +34,13 @@
     }
 
     @media (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        
         &___tipos--img {
-            padding: 15px;
             width: 90vw;
             height: 60vh;
+            object-fit: contain;
         }
         &__tipos p {
             text-align: center;
