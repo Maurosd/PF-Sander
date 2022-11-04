@@ -48,7 +48,7 @@
     </header>
 
     <main>
-        <section class="portada">
+        <section class="portada container">
 
             <div class="portada__texto">
                 <h1>REJUFEST</h1>
@@ -63,13 +63,22 @@
             <iframe class="container" height="315" src="https://www.youtube.com/embed/Oz4pJJoci68" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 +        </section>
 
-        <section class=" playlist" data-aos="zoom-in">
+        <section class=" playlist container" data-aos="zoom-in">
             <h2 class="playlist__titulo"> Playlist Oficial</h2>
             <h2 class="playlist__logo"><i class="bi bi-spotify"></i></h2>
             <a href="https://open.spotify.com/playlist/1X5FBnXjcZL9hU9Mbc40kT" target="_blank" class="btn">Escuchala
                 aca</a>
-
         </section>
+
+        <form class="container mt-5">
+            <div class="mb-3">
+              <h3>Suscribite a nuestro NewsLetter</h3>
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">No compartiremos tu mail con nadie.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Suscribirme</button>
+          </form>
 
     </main>
 
